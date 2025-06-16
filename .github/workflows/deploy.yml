@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+        
+    - name: Install Dependencies
+      run: npm install
+      
+    - name: Create env file
+      run: |
+        echo "VITE_COMPANY_NOME='Clínica Odontológica Aguiar'" >> .env
+        echo "VITE_WHATSAPP_NUMBER='(11) 99999-9999'" >> .env
+        echo "VITE_COMPANY_EMAIL='contato@clinicaaguiar.com'" >> .env
+        echo "VITE_COMPANY_ENDERECO='Endereço de testes'" >> .env
+        echo "VITE_COMPANY_INSTA='Endereço do Instagram'" >> .env
+        echo "VITE_COMPANY_FACE='Endereço do Facebook'" >> .env
+        
+    - name: Build
+      run: npm run build
+      
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: build
