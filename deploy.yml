@@ -21,12 +21,12 @@ jobs:
       
     - name: Create env file
       run: |
-        echo "VITE_COMPANY_NOME='Clínica Odontológica Aguiar'" >> .env
-        echo "VITE_WHATSAPP_NUMBER='(11) 99999-9999'" >> .env
-        echo "VITE_COMPANY_EMAIL='contato@clinicaaguiar.com'" >> .env
-        echo "VITE_COMPANY_ENDERECO='Endereço de testes'" >> .env
-        echo "VITE_COMPANY_INSTA='Endereço do Instagram'" >> .env
-        echo "VITE_COMPANY_FACE='Endereço do Facebook'" >> .env
+        echo "VITE_COMPANY_NOME='Clinica Odontológica Aguiar'" >> .env
+        echo "VITE_WHATSAPP_NUMBER='(61) 99999-9999'" >> .env
+        echo "VITE_COMPANY_EMAIL='contato@clinicaguiar.com'" >> .env
+        echo "VITE_COMPANY_ENDERECO='Endereço de teste'" >> .env
+        echo "VITE_COMPANY_INSTA='Endereço do Insta'" >> .env
+        echo "VITE_COMPANY_FACE='Endereço do Face'" >> .env
         
     - name: Build
       run: npm run build
