@@ -7,7 +7,7 @@ const Location = () => {
       <div className="container">
         <h2 className="section-title">Nossa Localização</h2>
         <p className="address">
-          Endereço: {import.meta.env.VITE_COMPANY_ENDERECO}
+          Endereço: {"Endereço de testes"}
         </p>
         <div className="map-container">
           {/* Instrução: Vá ao Google Maps, pesquise seu endereço, clique em "Compartilhar" > "Incorporar um mapa" e copie o código do iframe aqui. */}
@@ -19,7 +19,7 @@ const Location = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title={`Localização da ${import.meta.env.VITE_COMPANY_ENDERECO}`}
+            title={`Localização da ${"Endereço de testes"}`}
           ></iframe>
         </div>
       </div>

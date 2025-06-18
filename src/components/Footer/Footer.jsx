@@ -8,18 +8,18 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-contact">
-          <h4>{import.meta.env.VITE_COMPANY_NOME}</h4>
-          <p>{import.meta.env.VITE_COMPANY_ENDERECO}</p>
-          <p>{import.meta.env.VITE_COMPANY_EMAIL}</p>
+          <h4>{"Clínica Odontológica Aguiar"}</h4>
+          <p>{"Endereço de testes"}</p>
+          <p>{"contato@clinicaaguiar.com"}</p>
         </div>
         <div className="footer-social">
           <h4>Siga-nos</h4>
-          <a href={`#${import.meta.env.VITE_COMPANY_INSTA}`} target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href={`#${import.meta.env.VITE_COMPANY_FACE}`} target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href={`#${"Endereço do Instagram"}`} target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href={`#${"Endereço do Facebook"}`} target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {currentYear} {import.meta.env.VITE_COMPANY_NOME}. Todos os direitos reservados.</p>
+        <p>&copy; {currentYear} {"Clínica Odontológica Aguiar"}. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

@@ -18,10 +18,10 @@ const Contact = () => {
           </div>
           <div className="contact-info">
             <h3>Ou Fale Conosco Diretamente</h3>
-            <p><strong>Telefone:</strong> {import.meta.env.VITE_WHATSAPP_NUMBER}</p>
-            <p><strong>E-mail:</strong> {import.meta.env.VITE_COMPANY_EMAIL}</p>
+            <p><strong>Telefone:</strong> {"(11) 99999-9999"}</p>
+            <p><strong>E-mail:</strong> {"contato@clinicaaguiar.com"}</p>
             <a 
-              href={`https://api.whatsapp.com/send?phone=${import.meta.env.VITE_WHATSAPP_NUMBER}&text=Olá, gostaria de mais informações sobre os serviços da ${import.meta.env.VITE_COMPANY_NOME}.`}
+              href={`https://api.whatsapp.com/send?phone=${"(11) 99999-9999"}&text=Olá, gostaria de mais informações sobre os serviços da ${"Clínica Odontológica Aguiar"}.`}
               className="whatsapp-button"
               target="_blank"
               rel="noopener noreferrer"
